@@ -5,7 +5,7 @@ CITY_DATA = {'chicago': 'chicago.csv',
              'new york': 'new_york_city.csv',
              'washington': 'washington.csv'}
 
-
+START_TIME = 'Start Time'
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -99,12 +99,12 @@ def load_data(city, month, day):
 
     df = pd.read_csv(city)
 
-    df['Start Time'] = pd.to_datetime(df['Start Time'])
+    df[START_TIME] = pd.to_datetime(df[START_TIME])
     df['End Time'] = pd.to_datetime(df['End Time'])
 
-    df['hour'] = df['Start Time'].dt.hour
-    df['month'] = df['Start Time'].dt.month
-    df['day'] = df['Start Time'].dt.day_name()
+    df['hour'] = df[START_TIME].dt.hour
+    df['month'] = df[START_TIME].dt.month
+    df['day'] = df[START_TIME].dt.day_name()
 
     print(city, month, day)
     if month != 0:
@@ -170,7 +170,7 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
 
     start_time = time.time()
-    df['travel_time'] = (df['End Time'] - df['Start Time'])
+    df['travel_time'] = (df['End Time'] - df[START_TIME])
 
     print('\nTotal travel time in hours:',
           round((df['travel_time'] / pd.Timedelta(hours=1)).sum()))
