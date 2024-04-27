@@ -17,3 +17,21 @@ Include the files used
 
 I'd like to thank the Udacity team for providing the data and the project structure.
 
+### Running the Project
+
+```sh
+
+python bikeshare.py
+
+```
+
+### Initial Setup
+
+`Python version` used during development was `3.8.14`
+
+```sh
+
+pip install -r requirements.txt
+
+```
+
