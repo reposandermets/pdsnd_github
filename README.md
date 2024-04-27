@@ -11,7 +11,9 @@ Udacity Bikeshare Project
 This project is part of the Udacity Data Analyst Nanodegree Program. It contains data analyses of bikeshare data from three cities in the United States: Chicago, New York City, and Washington. The data is analyzed using Python and Pandas. The user can filter the data by city, month, and day of the week. The user can also view summary statistics of the data.
 
 ### Files used
-Include the files used
+
+- [Implementation](./bikeshare.py)
+- [Requirements](./requirements.txt)
 
 ### Credits
 
