@@ -7,7 +7,8 @@ Include the date you created this project and README file.
 Replace the Project Title
 
 ### Description
-Describe what your project is about and what it does
+
+This project is part of the Udacity Data Analyst Nanodegree Program. It contains data analyses of bikeshare data from three cities in the United States: Chicago, New York City, and Washington. The data is analyzed using Python and Pandas. The user can filter the data by city, month, and day of the week. The user can also view summary statistics of the data.
 
 ### Files used
 Include the files used
