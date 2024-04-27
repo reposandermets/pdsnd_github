@@ -4,7 +4,7 @@ This project was created on 2024-04-26.
 
 ### Project Title
 
-Udacity Bikeshare Project
+Udacity Bikeshare Project.
 
 ### Description
 
@@ -29,7 +29,7 @@ python bikeshare.py
 
 ### Initial Setup
 
-`Python version` used during development was `3.8.14`
+`Python version` used during development was `3.8.14`.
 
 ```sh
 
