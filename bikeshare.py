@@ -7,6 +7,7 @@ CITY_DATA = {'chicago': 'chicago.csv',
 
 START_TIME = 'Start Time'
 END_TIME = 'End Time'
+BIRTH_YEAR = 'Birth Year'
 
 def get_filters():
     """
@@ -201,8 +202,8 @@ def user_stats(df):
     else:
         print('Gender stats cannot be calculated because Gender does not appear in the dataframe')
 
-    if 'Birth Year' in df:
-        df_by_sorted = df.sort_values('Birth Year')['Birth Year']
+    if BIRTH_YEAR in df:
+        df_by_sorted = df.sort_values(BIRTH_YEAR)[BIRTH_YEAR]
         print('\nThe earliest Birth Year:',
               int(df_by_sorted.iloc[0]))
 
